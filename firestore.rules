@@ -1,0 +1,101 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    
+    // Global Safety Net: Default Deny All
+    match /{document=**} {
+      allow read, write: if false;
+    }
+
+    // Helper functions
+    function isSignedIn() {
+      return request.auth != null;
+    }
+
+    function isOwner(userId) {
+      return isSignedIn() && request.auth.uid == userId;
+    }
+
+    function isValidId(id) {
+      return id is string && id.size() > 0 && id.size() <= 128 && id.matches('^[a-zA-Z0-9_\\-]+$');
+    }
+
+    function incoming() {
+      return request.resource.data;
+    }
+
+    function existing() {
+      return resource.data;
+    }
+
+    // Test connection document
+    match /test/connection {
+      allow read: if true;
+    }
+
+    // User Profile
+    match /users/{userId} {
+      allow get: if isOwner(userId) && isValidId(userId);
+      allow create, update: if isOwner(userId) && isValidId(userId)
+        && incoming().id == userId
+        && incoming().email is string
+        && incoming().email.size() <= 128;
+      allow delete: if false;
+
+      // User Wedding Settings
+      match /settings/wedding {
+        allow get: if isOwner(userId);
+        allow create, update: if isOwner(userId)
+          && incoming().activeMuhuratDate is string
+          && incoming().activeMuhuratDate.size() <= 32;
+        allow delete: if false;
+      }
+
+      // Budget Subcollection
+      match /budget/{budgetId} {
+        allow get, list: if isOwner(userId);
+        allow create: if isOwner(userId) && isValidId(budgetId)
+          && incoming().userId == userId
+          && incoming().id == budgetId
+          && incoming().title is string && incoming().title.size() <= 256
+          && incoming().allocatedAmount is number;
+        allow update: if isOwner(userId) && isValidId(budgetId)
+          && incoming().userId == userId
+          && incoming().id == budgetId
+          && incoming().title is string && incoming().title.size() <= 256
+          && incoming().allocatedAmount is number;
+        allow delete: if isOwner(userId) && isValidId(budgetId);
+      }
+
+      // Events Subcollection
+      match /events/{eventId} {
+        allow get, list: if isOwner(userId);
+        allow create: if isOwner(userId) && isValidId(eventId)
+          && incoming().userId == userId
+          && incoming().id == eventId
+          && incoming().title is string && incoming().title.size() <= 256;
+        allow update: if isOwner(userId) && isValidId(eventId)
+          && incoming().userId == userId
+          && incoming().id == eventId
+          && incoming().title is string && incoming().title.size() <= 256;
+        allow delete: if isOwner(userId) && isValidId(eventId);
+      }
+
+      // Guests Subcollection
+      match /guests/{guestId} {
+        allow get, list: if isOwner(userId);
+        allow create: if isOwner(userId) && isValidId(guestId)
+          && incoming().userId == userId
+          && incoming().id == guestId
+          && incoming().name is string && incoming().name.size() <= 128
+          && incoming().partySize is number;
+        allow update: if isOwner(userId) && isValidId(guestId)
+          && incoming().userId == userId
+          && incoming().id == guestId
+          && incoming().name is string && incoming().name.size() <= 128
+          && incoming().partySize is number;
+        allow delete: if isOwner(userId) && isValidId(guestId);
+      }
+    }
+  }
+}

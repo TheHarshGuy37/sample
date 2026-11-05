@@ -1,0 +1,253 @@
+---
+name: Utsava Regal Modernity
+colors:
+  surface: '#faf8ff'
+  surface-dim: '#d2d9f4'
+  surface-bright: '#faf8ff'
+  surface-container-lowest: '#ffffff'
+  surface-container-low: '#f2f3ff'
+  surface-container: '#eaedff'
+  surface-container-high: '#e2e7ff'
+  surface-container-highest: '#dae2fd'
+  on-surface: '#131b2e'
+  on-surface-variant: '#5b4041'
+  inverse-surface: '#283044'
+  inverse-on-surface: '#eef0ff'
+  outline: '#8f6f71'
+  outline-variant: '#e3bdbf'
+  surface-tint: '#bc0b3b'
+  primary: '#b90538'
+  on-primary: '#ffffff'
+  primary-container: '#dc2c4f'
+  on-primary-container: '#fffbff'
+  inverse-primary: '#ffb2b7'
+  secondary: '#904d00'
+  on-secondary: '#ffffff'
+  secondary-container: '#fe932c'
+  on-secondary-container: '#663500'
+  tertiary: '#006947'
+  on-tertiary: '#ffffff'
+  tertiary-container: '#00855b'
+  on-tertiary-container: '#f5fff6'
+  error: '#ba1a1a'
+  on-error: '#ffffff'
+  error-container: '#ffdad6'
+  on-error-container: '#93000a'
+  primary-fixed: '#ffdadb'
+  primary-fixed-dim: '#ffb2b7'
+  on-primary-fixed: '#40000d'
+  on-primary-fixed-variant: '#92002a'
+  secondary-fixed: '#ffdcc3'
+  secondary-fixed-dim: '#ffb77d'
+  on-secondary-fixed: '#2f1500'
+  on-secondary-fixed-variant: '#6e3900'
+  tertiary-fixed: '#6ffbbe'
+  tertiary-fixed-dim: '#4edea3'
+  on-tertiary-fixed: '#002113'
+  on-tertiary-fixed-variant: '#005236'
+  background: '#faf8ff'
+  on-background: '#131b2e'
+  surface-variant: '#dae2fd'
+typography:
+  display-hero:
+    fontFamily: Playfair Display
+    fontSize: 56px
+    fontWeight: '600'
+    lineHeight: 64px
+    letterSpacing: -0.02em
+  display-hero-mobile:
+    fontFamily: Playfair Display
+    fontSize: 38px
+    fontWeight: '600'
+    lineHeight: 44px
+    letterSpacing: -0.01em
+  headline-lg:
+    fontFamily: Playfair Display
+    fontSize: 40px
+    fontWeight: '600'
+    lineHeight: 48px
+    letterSpacing: -0.015em
+  headline-lg-mobile:
+    fontFamily: Playfair Display
+    fontSize: 28px
+    fontWeight: '600'
+    lineHeight: 36px
+    letterSpacing: -0.01em
+  headline-md:
+    fontFamily: Playfair Display
+    fontSize: 28px
+    fontWeight: '500'
+    lineHeight: 36px
+    letterSpacing: -0.01em
+  headline-sm:
+    fontFamily: Playfair Display
+    fontSize: 22px
+    fontWeight: '600'
+    lineHeight: 28px
+    letterSpacing: 0em
+  title-lg:
+    fontFamily: Plus Jakarta Sans
+    fontSize: 18px
+    fontWeight: '600'
+    lineHeight: 26px
+    letterSpacing: -0.005em
+  title-md:
+    fontFamily: Plus Jakarta Sans
+    fontSize: 16px
+    fontWeight: '600'
+    lineHeight: 24px
+    letterSpacing: 0em
+  body-lg:
+    fontFamily: Plus Jakarta Sans
+    fontSize: 17px
+    fontWeight: '400'
+    lineHeight: 28px
+    letterSpacing: 0em
+  body-md:
+    fontFamily: Plus Jakarta Sans
+    fontSize: 15px
+    fontWeight: '400'
+    lineHeight: 24px
+    letterSpacing: 0em
+  body-sm:
+    fontFamily: Plus Jakarta Sans
+    fontSize: 13px
+    fontWeight: '400'
+    lineHeight: 20px
+    letterSpacing: 0.005em
+  label-md:
+    fontFamily: Plus Jakarta Sans
+    fontSize: 14px
+    fontWeight: '600'
+    lineHeight: 20px
+    letterSpacing: 0.01em
+  label-sm:
+    fontFamily: Plus Jakarta Sans
+    fontSize: 12px
+    fontWeight: '600'
+    lineHeight: 16px
+    letterSpacing: 0.02em
+  caption:
+    fontFamily: Plus Jakarta Sans
+    fontSize: 11px
+    fontWeight: '500'
+    lineHeight: 14px
+    letterSpacing: 0.03em
+  currency-numeric:
+    fontFamily: Plus Jakarta Sans
+    fontSize: 20px
+    fontWeight: '700'
+    lineHeight: 24px
+    letterSpacing: -0.02em
+rounded:
+  sm: 0.25rem
+  DEFAULT: 0.5rem
+  md: 0.75rem
+  lg: 1rem
+  xl: 1.5rem
+  full: 9999px
+spacing:
+  gutter: 1.5rem
+  gutter-mobile: 1rem
+  margin: 3rem
+  margin-mobile: 1.25rem
+  space-xs: 0.25rem
+  space-sm: 0.5rem
+  space-md: 1rem
+  space-lg: 1.5rem
+  space-xl: 2.5rem
+---
+
+## Brand & Style
+The design system reflects the grandeur, romance, and celebratory opulence of royal Indian weddings, refined through the architectural clarity of contemporary digital luxury. It evokes emotional warmth, effortless prestige, and calm administrative confidence during high-stakes celebration planning.
+
+The aesthetic bridges traditional Indian heritage (mahal arches, marigold warmth, fine meenakari motifs, heirloom jewelry) with clean, high-precision SaaS usability. It relies on open spatial canvases, airy warm-ivory backdrops, whisper-thin metallic borders, and radiant rose accents. Rather than heavy ornamentation, luxury is communicated through impeccable typographic hierarchy, generous negative space, and disciplined, luminous surface treatments.
+
+## Colors
+The color architecture rests on high-value warmth, luminous metallic accents, and deep, regal contrast:
+
+- **Canvas & Surfaces:**
+  - Base Canvas: Warm Ivory (`#FAF9F6`) provides an organic, tactile, parchment-like foundation.
+  - Surface Card / Elevate: Soft Pure Warm White (`#FFFFFF`).
+  - Subtle Insets & Alternating Rows: Deep Ivory / Cream (`#F5F3EF`).
+  - Warm Tint Substrates: Rose Mist (`#FFF1F2`) for active celebratory states.
+
+- **Primary Accent (Warm Rose Pink - `#F43F5E`):**
+  - Represents sindoor, gulab petals, and ceremonial joy.
+  - Applied to primary interactive focal points: primary actions, highlighted dates, key booking moments, and focal tags.
+  - Paired with soft border tint Rose-100 (`#FFE4E6`).
+
+- **Secondary Accent (Champagne Gold - Primary `#D97706`, Highlights `#EAB308`):**
+  - Signifies regal craft, zari embroidery, and ceremonial brass.
+  - Applied to verified badges, VIP vendor tiers, decorative micro-borders, and concierge elements.
+  - Subdued Gold Border Tint (`#FEF3C7` / `#FDE68A` with opacity).
+
+- **Tertiary Accent (Emerald Green - `#10B981`):**
+  - Evokes uncut emeralds (panna) and symbolizes balance, positive budget health, confirmed payments, and vendor availability.
+
+- **Neutrals & Typography:**
+  - Primary Text & Structural Chrome: Dark Slate (`#0F172A`), delivering editorial weight without stark pure-black hardness.
+  - Secondary Text / Subtitles: Muted Slate (`#475569`).
+  - Borders & Hairlines: Warm Cashmere Slate (`#E2E8F0`) blended with faint gold undertones.
+
+## Typography
+Typographic scale unites royal Indian invitations with high-density marketplace readability:
+
+- **Display & Headings (Playfair Display):** Imparts romantic weight, editorial sophistication, and timeless majesty. Reserved strictly for primary titles, section banners, vendor portfolio headers, and marquee figures. Always rendered in Slate (`#0F172A`) or deep Rose accents, avoiding all-caps formatting except for brief ceremonial titles.
+- **Interface & Operational Text (Plus Jakarta Sans):** Balances geometric balance with humanist legibility. Utilized across long-form vendor reviews, contract terms, budget metrics, guest rosters, and dense inventory grids.
+- **Numerics & Financial Figures:** Rendered in tabular figures (`tnum`) in Plus Jakarta Sans to maintain vertical alignment across multi-tier wedding budget spreadsheets and vendor price schedules.
+
+## Layout & Spacing
+The layout model employs a fluid 12-column grid system bounded by maximum canvas widths:
+
+- **Desktop (1280px+):** 12 columns, 24px gutters, generous 48px outer page margins. Vendor marketplace directories deploy asymmetric column splits (e.g., 4-column filter/budget console and 8-column curated visual directory).
+- **Tablet (768px - 1024px):** 8 columns, 20px gutters, 24px side margins. Filter controls collapse into structured drawer overlays.
+- **Mobile (< 768px):** 4 columns, 16px gutters, 20px edge margins. Visual cards transition into single-column vertical flows with persistent navigation bars.
+- **Rhythm & Grouping:** Internal card padding is standardized to `space-lg` (24px) for desktop and `space-md` (16px) for mobile to preserve the generous, unhurried air of luxury hospitality.
+
+## Elevation & Depth
+Depth in this design system avoids heavy shadows, opting instead for ambient candlelight diffusion and delicate dual-stroke borders:
+
+- **Surface Baseline:** Ivory canvas (`#FAF9F6`) lies flush with the viewport.
+- **Card Tier (Level 1):** Soft white (`#FFFFFF`) with a 1px composite border (`rgba(226, 232, 240, 0.8)` or champagne-accented `rgba(217, 119, 6, 0.15)`), supported by an ambient drop shadow: `0 4px 20px -2px rgba(15, 23, 42, 0.04)`.
+- **Raised & Hover Tier (Level 2):** Applied to active vendor cards and interactive booking modules. Elevation rises with a warm shadow: `0 12px 32px -4px rgba(244, 63, 94, 0.06), 0 4px 12px -2px rgba(15, 23, 42, 0.04)`, accompanied by a shifting border from soft gray to Rose-100 (`#FFE4E6`).
+- **Overlay & Modal Tier (Level 3):** Reserved for luxury venue tours, guest lists, and payment reconciliations. Shadows feature a wide-spread ambient profile: `0 24px 48px -12px rgba(15, 23, 42, 0.12)`. Modals display a backdrop blur overlay of `rgba(15, 23, 42, 0.4)` accompanied by a 12px backdrop filter blur.
+
+## Shapes
+Geometry is calibrated to bridge stately architectural curves and functional software interfaces:
+
+- **Cards & Content Panels:** Standardized at `16px` radius (`rounded-lg`). This softens high-resolution banquet and jewelry photography without feeling child-like.
+- **Interactive Controls (Buttons, Text Inputs, Dropdowns):** Standardized at `12px` radius (`rounded-md` within level 2 scale). This offers an ergonomic touch surface while preserving structural precision.
+- **Pills & Status Tags:** Fully rounded pill curves (`9999px`) are exclusively used for status indicators, verified bridal badges, muhurat timing tags, and count chips.
+
+## Components
+
+- **Buttons:**
+  - *Primary Action:* Rose Pink (`#F43F5E`) background, crisp white label, 12px border radius, subtle inner gold highlight or glow on hover (`#E11D48`). Height: 48px for standard desktop interactions.
+  - *Secondary Action / Royal Outline:* Warm white background, 1px champagne gold border (`#D97706`), text in Dark Slate (`#0F172A`). Hover transitions to Rose Mist tint (`#FFF1F2`).
+  - *Tertiary / Ghost:* Dark slate typography with gold underline transition on hover; zero background container.
+
+- **Input Fields & Selectors:**
+  - Crisp warm white background, 12px border radius, 1px border in Cashmere Slate (`#E2E8F0`).
+  - Focused state: 1.5px border in Warm Rose (`#F43F5E`) accompanied by a 3px ring of Rose-100 (`rgba(244, 63, 94, 0.12)`). Labels rest in Plus Jakarta Sans Medium above the input with optional gold asterisks for mandatory ceremonial details.
+
+- **Cards & Directory Showcases:**
+  - Standard card surface: 16px radius, warm white background, framed by a soft border (`#F1F5F9`).
+  - Vendor Card Pattern: Top 16:9 imagery showcase with an inset Champagne Gold verified shield badge, followed by Playfair Display vendor title, category chips, rating stars in Champagne Gold (`#EAB308`), and bottom tray featuring base price in bold tabular figures.
+
+- **Chips & Status Tags:**
+  - *Ceremonial / Event Tags (Sangeet, Mehendi, Pheras):* Rose Mist (`#FFF1F2`) background, Rose (`#F43F5E`) text, border-rose-100.
+  - *Budget Health Indicator:* Soft Emerald background (`#ECFDF5`), bold Emerald text (`#047857`), paired with an emerald status dot to indicate budget safety.
+  - *Luxury / Curated Tier:* Soft Amber background (`#FEF3C7`), Champagne Gold text (`#B45309`), delicate metallic sheen.
+
+- **Lists & Data Tables:**
+  - Clean separation through 1px border dividers (`#F1F5F9`). Row hovering adopts an ultra-light Warm Ivory tint (`#FAF9F6`).
+  - Financial reconciliation rows highlight totals in Dark Slate with secondary currency notation in INR (₹) utilizing tabular numbering.
+
+- **Checkboxes & Radios:**
+  - Checkboxes feature a 6px radius; radios maintain complete circular geometry.
+  - Selected state fills with Warm Rose (`#F43F5E`) presenting a clean white glyph, removing standard browser beveling entirely.
+
+- **Domain-Specific Components:**
+  - *Muhurat & Date Selector:* Calendar modules showcasing auspicious wedding dates flagged with subtle champagne gold badges and rose ring highlights.
+  - *Budget Tracker Meter:* Segmented visual tracker featuring Emerald Green (`#10B981`) for allocated spend, Champagne Gold (`#D97706`) for committed vendor advances, and neutral muted slate for surplus budget.

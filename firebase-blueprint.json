@@ -1,0 +1,113 @@
+{
+  "entities": {
+    "UserProfile": {
+      "title": "UserProfile",
+      "description": "User profile information",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string", "maxLength": 128 },
+        "email": { "type": "string", "maxLength": 128 },
+        "displayName": { "type": "string", "maxLength": 128 },
+        "photoURL": { "type": "string", "maxLength": 512 },
+        "createdAt": { "type": "string", "maxLength": 64 }
+      },
+      "required": ["id", "email"]
+    },
+    "UserWeddingSettings": {
+      "title": "UserWeddingSettings",
+      "description": "Customizable wedding settings for the user",
+      "type": "object",
+      "properties": {
+        "activeMuhuratDate": { "type": "string", "maxLength": 32 },
+        "brideName": { "type": "string", "maxLength": 128 },
+        "groomName": { "type": "string", "maxLength": 128 },
+        "venueName": { "type": "string", "maxLength": 256 },
+        "totalBudget": { "type": "number" },
+        "updatedAt": { "type": "string", "maxLength": 64 }
+      },
+      "required": ["activeMuhuratDate"]
+    },
+    "BudgetItemDoc": {
+      "title": "BudgetItemDoc",
+      "description": "Saved wedding budget and payment milestone record",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string", "maxLength": 128 },
+        "userId": { "type": "string", "maxLength": 128 },
+        "category": { "type": "string", "maxLength": 128 },
+        "title": { "type": "string", "maxLength": 256 },
+        "vendorName": { "type": "string", "maxLength": 256 },
+        "allocatedAmount": { "type": "number" },
+        "advancePaid": { "type": "number" },
+        "dueDate": { "type": "string", "maxLength": 64 },
+        "status": { "type": "string", "maxLength": 64 },
+        "notes": { "type": "string", "maxLength": 1024 },
+        "updatedAt": { "type": "string", "maxLength": 64 }
+      },
+      "required": ["id", "userId", "title", "allocatedAmount"]
+    },
+    "CeremonialEventDoc": {
+      "title": "CeremonialEventDoc",
+      "description": "Ceremonial timeline event and checklist",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string", "maxLength": 128 },
+        "userId": { "type": "string", "maxLength": 128 },
+        "title": { "type": "string", "maxLength": 256 },
+        "day": { "type": "string", "maxLength": 64 },
+        "date": { "type": "string", "maxLength": 64 },
+        "timeRange": { "type": "string", "maxLength": 64 },
+        "muhuratTiming": { "type": "string", "maxLength": 128 },
+        "venuePavilion": { "type": "string", "maxLength": 256 },
+        "dressCode": { "type": "string", "maxLength": 256 },
+        "dressCodeColors": { "type": "string", "maxLength": 256 },
+        "description": { "type": "string", "maxLength": 2048 },
+        "tag": { "type": "string", "maxLength": 64 },
+        "updatedAt": { "type": "string", "maxLength": 64 }
+      },
+      "required": ["id", "userId", "title"]
+    },
+    "GuestDoc": {
+      "title": "GuestDoc",
+      "description": "Guest list record and accommodation details",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string", "maxLength": 128 },
+        "userId": { "type": "string", "maxLength": 128 },
+        "name": { "type": "string", "maxLength": 128 },
+        "familySide": { "type": "string", "maxLength": 64 },
+        "partySize": { "type": "number" },
+        "suiteAssigned": { "type": "string", "maxLength": 128 },
+        "rsvpStatus": { "type": "string", "maxLength": 64 },
+        "dietaryPreference": { "type": "string", "maxLength": 64 },
+        "airportConcierge": { "type": "string", "maxLength": 64 },
+        "welcomeHamperDelivered": { "type": "boolean" },
+        "contact": { "type": "string", "maxLength": 64 },
+        "updatedAt": { "type": "string", "maxLength": 64 }
+      },
+      "required": ["id", "userId", "name", "partySize"]
+    }
+  },
+  "firestore": {
+    "/users/{userId}": {
+      "schema": { "$ref": "UserProfile" },
+      "description": "User profile document"
+    },
+    "/users/{userId}/settings/wedding": {
+      "schema": { "$ref": "UserWeddingSettings" },
+      "description": "User personal wedding settings"
+    },
+    "/users/{userId}/budget/{budgetId}": {
+      "schema": { "$ref": "BudgetItemDoc" },
+      "description": "User wedding budget items"
+    },
+    "/users/{userId}/events/{eventId}": {
+      "schema": { "$ref": "CeremonialEventDoc" },
+      "description": "User customized ceremonial events"
+    },
+    "/users/{userId}/guests/{guestId}": {
+      "schema": { "$ref": "GuestDoc" },
+      "description": "User wedding guest roster"
+    }
+  }
+}

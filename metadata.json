@@ -1,0 +1,8 @@
+{
+  "name": "Utsava — Royal Indian Wedding Planner",
+  "description": "Curated royal Indian wedding directory, auspicious Shubh Muhurat calendar, multi-tier budget meter, ceremonial itineraries, and luxury guest concierge.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
